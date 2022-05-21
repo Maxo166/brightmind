@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build":"postcss static/css/tailwind/input.css -o static/css/tailwind/dist/output.min.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
