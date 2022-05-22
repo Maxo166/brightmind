@@ -2,12 +2,13 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 from . import forms
 from django.contrib.auth import login, authenticate, logout, update_session_auth_hash
-
+from . import models
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    courses = models.Course.objects.all()
+    return render(request, 'main/index.html', {'courses': courses})
 
 
 def signup(request):
