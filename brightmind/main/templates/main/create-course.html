@@ -3,12 +3,11 @@
 {% load crispy_forms_tags %}
 <span></span>
 {% block body %}
-
     <div class="">
         <form method="post" class="box">
             {% csrf_token %}
             {{ course_form|crispy }}
-            <button>Create</button>
+            <button class="button is-dark">Create</button>
         </form>
     </div>
 {% endblock body %}
