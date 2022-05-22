@@ -24,3 +24,12 @@ def signup(request):
     else:
         form = forms.RegisterForm()
     return render(request, 'registration/signup.html', {'signup_form': form})
+
+
+def create_course(request):
+    form = forms.CourseForm(request.POST)
+    if form.is_valid:
+        pass
+    else:
+        form = form.CourseForm()
+    return render(request, 'main/create-course.html', {'course_form': form})
