@@ -16,3 +16,9 @@ class CourseForm(forms.ModelForm):
     class Meta:
         model = models.Course
         fields = ['title', 'description', 'poster_url', 'category']
+
+
+class ChapterForm(forms.ModelForm):
+    class Meta:
+        model = models.Chapter
+        fields = ['title', 'description', 'course']

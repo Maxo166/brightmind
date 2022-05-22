@@ -33,3 +33,12 @@ def create_course(request):
     else:
         form = form.CourseForm()
     return render(request, 'main/create-course.html', {'course_form': form})
+
+
+def create_chapter(request):
+    form = forms.ChapterForm(request.POST)
+    if form.is_valid:
+        pass
+    else:
+        form = form.ChapterForm()
+    return render(request, 'main/create-chapter.html', {'chapter_form': form})
