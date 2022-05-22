@@ -9,3 +9,34 @@ nav.navbar {
         min-height: 4rem !important;
     }
 }
+.login-form form{
+    width: 22rem !important;
+}
+.login-form form input{
+    box-shadow: none !important;
+    
+}
+.login-form form.box {
+    BORDER-TOP: 2PX SOLID #485fc7;
+}
+.navbar-link,
+a.navbar-item {
+    cursor: pointer;
+    font-size: .875rem;
+}
+div#div_id_password1 ul {
+    position: absolute;
+    display: none;
+    z-index: 4;
+    background: #e91e63;
+    color: white;
+    padding: .75rem;
+    right: 0;
+    font-size: .800rem;
+}
+.first_last_name{
+    gap: .75rem;
+}
+span.asterisk {
+    color: #e91e63 !important;
+}
